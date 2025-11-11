@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0">
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+			.logo {
+				font-weight: 700;
+				font-size: 1.75rem;
+				padding-bottom: 0.5rem;
+				color: orangered;
+				letter-spacing: -0.05em;
+			}
 
 			.name {
 				font-weight: 700;
@@ -15,10 +26,10 @@
 			}
 
 			.signature {
-				font-family: 'JetBrains Mono', monospace;
+				font-family: 'Inter', sans-serif;
 				color: black;
 				border-top: 1px solid black;
-				padding: 1rem;
+				padding-top: 1rem;
 				margin: 1rem;
 				max-width: fit-content;
 			}
@@ -29,28 +40,61 @@
 
 			.signature a {
 				color: black;
-				text-decoration: none;
+				text-decoration: underline;
+				text-decoration-color: orangered;
 			}
 
 			.signature a:hover {
-				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			.par {
+				font-size: 0.75rem;
+				padding-top: 1rem;
+				max-width: 300px;
+				line-height: 1.4;
+			}
+
+			.par p {
+				margin-top: 0.5rem;
 			}
 		</style>
 	</head>
 
 	<body>
 		<div class="signature">
-			<p class="name">Tobia Scapin</p>
+			<p class="logo">DisciplineDesign</p>
+			<p class="name">Sofia Righetti <span style="font-weight: normal;">|
+					Designer</span></p>
 			<p class="spacer"><a
-					href="https://www.scapintobias.xyz">www.scapintobias.xyz</a>
+					href="https://www.discipline.design">www.discipline.design</a>
 			</p>
-			<p><a href="mailto:info@scapintobias.xyz">info@scapintobias.xyz</a>
+			<p><a
+					href="mailto:info@discipline.design">sofia@discipline.design</a>
 			</p>
-			<p class="spacer"><a
-					href="mailto:scapintobias@postecert.it">scapintobias@postecert.it</a>
+			<p>+39 346 7507187
 			</p>
-			<p>+39 3402100166
-			</p>
+			<p class="spacer"></p>
+			<div class="par">
+				<p>Le informazioni trasmesse sono destinate esclusivamente alla
+					persona o entità a cui sono indirizzate e possono contenere
+					materiale riservato.
+				</p>
+				<p>Qualsiasi revisione, ritrasmissione, diffusione o altro uso
+					di
+					tali informazioni, o qualsiasi azione intrapresa sulla base
+					di
+					esse da parte di persone o entità diverse dal destinatario
+					previsto è vietata.
+				</p>
+				<p>Se hai ricevuto questo messaggio per errore, contatta
+					<a
+						href="mailto:info@discipline.design">info@discipline.design</a>
+					e cancella il materiale da qualsiasi
+					computer. Se questa email contiene allegati, assicurati che
+					vengano controllati per virus prima di aprirli.
+				</p>
+			</div>
 
 		</div>
 	</body>
