@@ -2,7 +2,7 @@
 
 ### Step 1 — Prepare your HTML
 
-Create a file called `signature.html` with your email signature code. Use inline CSS only. Open it in Safari, select all (`⌘ + A`), and copy (`⌘ + C`).
+Create a file called `signature.html` with your email signature code. Use inline CSS only. Open it in Safari, and check it.
 
 ![Signature Preview](signature.png)
 
