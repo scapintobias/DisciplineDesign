@@ -4,6 +4,8 @@
 
 Create a file called `signature.html` with your email signature code. Use inline CSS only. Open it in Safari, select all (`⌘ + A`), and copy (`⌘ + C`).
 
+![Signature Preview](signature.png)
+
 ### Step 2 — Create a placeholder in Mail
 
 Open **Mail → Settings → Signatures**.  
