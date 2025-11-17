@@ -1,95 +1,81 @@
-# Architettura prima del codice  
-Prodotti che funzionano perché nascono da un sistema, non da un’idea.
+# Discipline Design 
+Software a misura d'uomo.
 
-## Mettiamo ordine dove gli altri iniziano a programmare  
-Siamo il punto di contatto tra chi definisce i requisiti e chi li implementa.  
-Trasformiamo obiettivi e vincoli in modelli concettuali, flussi e interfacce che i team tecnici possono sviluppare senza ambiguità.
+## L'architettura prima del codice.
+Prodotti che funzionano — e continuano a farlo.
 
-Lavoriamo con software house, product team e stakeholder tecnici per definire struttura, flussi, validazioni e logiche prima che l’IDE venga aperto.
+Trasformiamo idee, requisiti e vincoli in sistemi chiari: architetture, flussi, prototipi e interfacce che i team tecnici possono implementare senza incertezze.
+
+Lavoriamo accanto a product team, stakeholder e sviluppatori per ridurre ambiguità, accelerare le decisioni e garantire che ciò che viene progettato arrivi al codice in forma chiara, verificabile e completa.
+
+Il nostro lavoro riduce la complessità, previene incomprensioni e crea una base solida su cui costruire software stabile e affidabile.
 
 ---
 
 # Il problema  
-La velocità dello sviluppo moderno ha un costo nascosto: si programma prima di aver capito cosa serva davvero.
-
-Il risultato:  
-- flussi incoerenti  
-- interfacce che crescono senza struttura  
-- utenti che si perdono  
-- ticket di supporto che aumentano  
-- codice che richiede continui aggiustamenti  
-- team tecnici impegnati a riparare problemi generati a monte
-
-La causa non è la tecnologia: è l’assenza di un modello chiaro da implementare.
+Oggi si corre. A volte troppo.
+Il codice parte prima ancora che il problema sia davvero definito.
+Questo genera flussi che crescono a strati, interfacce incoerenti, ticket infiniti, decisioni rimandate e correzioni continue.
+Non è una questione di tecnologia: è una questione di struttura.
 
 ---
 
 # Chi siamo  
-Siamo progettisti specializzati in sistemi complessi.  
-Interveniamo nella parte più fragile dei prodotti digitali: definire il modello che guida l’implementazione.
+Siamo un collettivo di designer orientati a far funzionare i sistemi, non solo le schermate, con l’obiettivo di creare prodotti che funzionano oggi e continuano a funzionare domani.
 
-Costruiamo:  
-- architetture di flusso  
-- modelli concettuali  
-- processi  
-- interfacce  
-- design system modulari  
-- documentazione tecnica che riduce rework e ambiguità
+Non ci limitiamo alle interfacce: lavoriamo su requisiti, processi e flussi per chiarire ciò che spesso resta implicito.
 
-Portiamo ordine tra stakeholder, product manager e team di sviluppo, aumentando coerenza, velocità e qualità dell’esecuzione.
+Progettiamo architetture e percorsi che permettono ai team tecnici di lavorare con sicurezza, senza margini di interpretazione.
 
-Il nostro lavoro riduce l’entropia, accelera lo sviluppo e prolunga la vita del prodotto.
+Collaboriamo con software house e product team come partner affidabili, senza aggiungere burocrazia: un diagramma chiaro vale più di una riunione infinita, un prototipo concreto parla più di mille spiegazioni.
+
+Amiamo la documentazione chiara, i processi ordinati e i progetti che resistono nel tempo. Il nostro lavoro riduce l’entropia, accelera lo sviluppo e costruisce basi solide per prodotti duraturi.
 
 ---
 
 # Il risultato  
-- Prodotti coerenti e governabili nel tempo  
-- Carico cognitivo ridotto per utenti e team tecnici  
-- Meno supporto, meno bug, meno edge case  
-- Sviluppo più veloce, stabile e prevedibile  
-- Una base tecnica che scala senza rifattorizzazioni continue
+- Prodotti chiari, coerenti e più facili da mantenere
+- Meno errori, meno confusione, meno interventi d’emergenza
+- Sviluppo più veloce e più stabile
+- Decisioni nette invece di compromessi continui 
+- Una base che non crolla quando il prodotto scala
 
 ---
 
 # Metodo  
-Dal problema al codice, senza zone grigie.
-
-Il metodo integra architettura, UX e strategia in un flusso unico.  
-Ogni passaggio genera artefatti implementabili.
+Dal problema al codice, senza zone d’ombra.
 
 ### Analisi e requisiti  
-Riconduciamo bisogni, ruoli e vincoli a un linguaggio unico.
+Raccogliamo bisogni, ruoli e vincoli e li traduciamo in informazioni chiare: così tutti sanno cosa serve e perché.
 
 ### Architettura e flussi  
-Definiamo entità, stati, transizioni, percorsi e casi limite.
+Disegniamo entità, stati, percorsi e casi limite, creando una mappa comprensibile di come il prodotto deve funzionare.
 
 ### Design system e UI  
-Costruiamo componenti modulari coerenti con il modello concettuale.
+Progettiamo componenti, interfacce e pattern che rispecchiano la logica del sistema, pronti per lo sviluppo.
 
 ### Handoff tecnico  
-Consegniamo specifiche precise per backend e frontend, senza margine d’interpretazione.
+Consegniamo specifiche precise e decisioni documentate: gli sviluppatori sanno cosa fare senza dover indovinare.
 
 ### Follow-up  
-Garantiamo coerenza dopo il rilascio ed evitiamo la deriva strutturale del prodotto.
+Dopo il rilascio controlliamo risultati e feedback, aggiustiamo ciò che serve e manteniamo la coerenza del prodotto nel tempo.
 
 ---
 
 # Una regola semplice  
-Un’ora investita nella progettazione elimina settimane di correzioni.
+Investire un’ora nella progettazione può risparmiare settimane di correzioni.
 
-Con un modello chiaro, la software house si concentra sul codice, il prodotto si sviluppa senza ambiguità e gli utenti trovano un’interfaccia che funziona fin dal primo utilizzo.
+Con un modello chiaro, il team sviluppa senza dubbi e gli utenti trovano subito un’interfaccia che funziona.
 
 ---
 
 # Contatti  
-## Pronti a ridurre la complessità?  
-Parliamo del vostro prodotto.  
-Riconduciamo requisiti, flussi e vincoli a un sistema chiaro, documentato e implementabile.
-
-Un singolo confronto può evitare mesi di lavoro correttivo.
+## Pronti a mettere ordine? Parliamone
+Raccontateci il vostro prodotto.
+Vi aiutiamo a trasformare requisiti, flussi e vincoli in un sistema chiaro, documentato e facile da implementare.
 
 ### Parliamo del progetto  
-Descriveteci in poche righe cosa volete ottenere: rispondiamo con il prossimo passo concreto.
+Raccontateci cosa volete ottenere: rispondiamo con il prossimo passo concreto.
 
 ### Servizi rapidi  
-Discovery sprint, test di usabilità e prototipi rapidi per validare ipotesi senza impegnare lo sviluppo.
+Discovery sprint, test e prototipi per validare idee senza impegnare lo sviluppo.
