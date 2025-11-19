@@ -455,7 +455,7 @@ function Case() {
 					<Text
 						type='lead'
 						className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
-						Under Control
+						UnderControl
 					</Text>
 					{activeCase === 'UNDER' && (
 						<div className='my-24'>
