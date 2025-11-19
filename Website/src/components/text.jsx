@@ -4,10 +4,10 @@ export default function Text({ type = 'body', className = '', children }) {
 	switch (type) {
 		case 'title':
 			base =
-				'mb-12 font-bold tracking-tight text-black lg:text-5xl md:text-4xl sm:text-2xl';
+				'mb-12 font-bold tracking-tight text-black lg:text-5xl md:text-4xl sm:text-3xl';
 			break;
 		case 'subtitle':
-			base = 'font-semibold tracking-tight text-black lg:text-4xl md:text-2xl';
+			base = 'font-semibold tracking-tight text-black lg:text-4xl sm:text-2xl';
 			break;
 		case 'lead':
 			base =

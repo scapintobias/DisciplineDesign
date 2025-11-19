@@ -1,4 +1,5 @@
 import Text from '../components/text.jsx';
+import SEO from '../components/SEO.jsx';
 
 export default function Contatti() {
 	return (

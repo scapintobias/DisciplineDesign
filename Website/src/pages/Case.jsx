@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Text from '../components/text';
+import SEO from '../components/SEO';
 
 const CaseSILS = () => (
 	<section className='space-y-16'>
@@ -408,7 +409,13 @@ function Case() {
 			<main>
 				<article className='pt-20 pb-40'>
 					<Text type='title'>Casi Studio</Text>
-
+					<Text type='lead' className='mt-8'>
+						Progettiamo sistemi digitali complessi. La nostra formazione nasce
+						al Politecnico di Milano e il nostro lavoro si è consolidato
+						attraverso collaborazioni continuative con enti pubblici regionali,
+						tra cui Veneto Lavoro. Questi case study mostrano come interveniamo
+						quando i flussi crescono più in fretta delle interfacce.
+					</Text>
 					<div
 						role='button'
 						tabIndex={0}
