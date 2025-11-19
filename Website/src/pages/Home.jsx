@@ -64,9 +64,9 @@ export default function Home() {
 							alt='DisciplineDesign Logo'
 							className='w-screen'
 						/>
-						<h1 className='font-light tracking-tight text-white 2xl:text-9xl xl:text-8xl lg:text-7xl l:text-6xl md:text-5xl t:text-4xl sm:text-3xl'>
+						<div className='font-light tracking-tight text-white 2xl:text-9xl xl:text-8xl lg:text-7xl l:text-6xl md:text-5xl t:text-4xl sm:text-3xl'>
 							Software a misura d'uomo
-						</h1>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -75,7 +75,7 @@ export default function Home() {
 				<article className='flex flex-col pt-20 pb-40 sm:gap-32 md:gap-52'>
 					{/* INTRO */}
 					<section className='pb-30'>
-						<h1>L'architettura prima del codice.</h1>
+						<Text type='title'>L'architettura prima del codice.</Text>
 
 						<Text type='lead' className='mt-4'>
 							Prodotti che funzionano — e continuano a farlo.
@@ -113,7 +113,7 @@ export default function Home() {
 					<section>
 						<Text type='label'>Il problema</Text>
 
-						<h1>Oggi si corre. A volte troppo.</h1>
+						<Text type='title'>Oggi si corre. A volte troppo.</Text>
 
 						<Text type='lead' className='mt-6'>
 							Il codice parte prima ancora che il problema sia davvero definito.
@@ -135,11 +135,11 @@ export default function Home() {
 					<section>
 						<Text type='label'>Chi siamo</Text>
 
-						<h1>
+						<Text type='title'>
 							Siamo un collettivo di designer orientati a far funzionare i
 							sistemi, non solo le schermate, con l’obiettivo di creare prodotti
 							che funzionano oggi e continuano a funzionare domani.
-						</h1>
+						</Text>
 
 						<Text type='lead' className='mt-6'>
 							Non ci limitiamo alle interfacce: lavoriamo su requisiti, processi
@@ -195,44 +195,46 @@ export default function Home() {
 					<section>
 						<Text type='label'>Metodo</Text>
 
-						<h1>Dal problema al codice, senza zone d’ombra.</h1>
+						<Text type='title'>
+							Dal problema al codice, senza zone d’ombra.
+						</Text>
 
-						<div className='mt-6 space-y-8'>
+						<div className='flex flex-col mt-6 space-y-12'>
 							<div>
-								<h3>Analisi e requisiti</h3>
-								<Text type='lead' className='mt-2'>
+								<Text type='subsection'>Analisi e requisiti</Text>
+								<Text type='lead'>
 									Raccogliamo bisogni, ruoli e vincoli e li traduciamo in
 									informazioni chiare: così tutti sanno cosa serve e perché.
 								</Text>
 							</div>
 
 							<div>
-								<h3>Architettura e flussi</h3>
-								<Text type='lead' className='mt-2'>
+								<Text type='subsection'>Architettura e flussi</Text>
+								<Text type='lead'>
 									Disegniamo entità, stati, percorsi e casi limite, creando una
 									mappa comprensibile di come il prodotto deve funzionare.
 								</Text>
 							</div>
 
 							<div>
-								<h3>Design system e UI</h3>
-								<Text type='lead' className='mt-2'>
+								<Text type='subsection'>Design system e UI</Text>
+								<Text type='lead'>
 									Progettiamo componenti, interfacce e pattern che rispecchiano
 									la logica del sistema, pronti per lo sviluppo.
 								</Text>
 							</div>
 
 							<div>
-								<h3>Handoff tecnico</h3>
-								<Text type='lead' className='mt-2'>
+								<Text type='subsection'>Handoff tecnico</Text>
+								<Text type='lead'>
 									Consegniamo specifiche precise e decisioni documentate: gli
 									sviluppatori sanno cosa fare senza dover indovinare.
 								</Text>
 							</div>
 
 							<div>
-								<h3>Follow-up</h3>
-								<Text type='lead' className='mt-2'>
+								<Text type='subsection'>Follow-up</Text>
+								<Text type='lead'>
 									Dopo il rilascio controlliamo risultati e feedback,
 									aggiustiamo ciò che serve e manteniamo la coerenza del
 									prodotto nel tempo.
@@ -243,7 +245,7 @@ export default function Home() {
 
 					{/* UNA REGOLA SEMPLICE */}
 					<section>
-						<h1>Una regola semplice</h1>
+						<Text type='title'>Una regola semplice</Text>
 
 						<Text type='lead' className='mt-6'>
 							Investire un’ora nella progettazione può risparmiare settimane di

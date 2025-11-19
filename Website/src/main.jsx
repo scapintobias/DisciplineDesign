@@ -64,6 +64,10 @@ const router = createBrowserRouter([
 				path: 'case',
 				element: <Case />,
 			},
+			{
+				path: 'case/:caseId',
+				element: <Case />,
+			},
 		],
 	},
 ]);

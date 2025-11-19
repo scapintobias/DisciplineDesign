@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import Text from '../components/text';
 
 const CaseSILS = () => (
@@ -13,7 +14,7 @@ const CaseSILS = () => (
 
 		{/* Contesto */}
 		<section>
-			<h4>Contesto</h4>
+			<Text type='label'>Contesto</Text>
 			<Text type='lead'>
 				Il SILS nasce da una situazione semplice: ogni AULSS del Veneto gestiva
 				le Politiche Sociali con strumenti, formati e procedure proprie. Non era
@@ -31,7 +32,7 @@ const CaseSILS = () => (
 
 		{/* Architettura */}
 		<section>
-			<h4>Architettura</h4>
+			<Text type='label'>Architettura</Text>
 			<Text type='lead'>
 				Il primo passo è stato definire un modello unico, condiviso da tutte le
 				AULSS: ruoli chiari, flussi coerenti, stessi stati, stesse regole.
@@ -44,7 +45,7 @@ const CaseSILS = () => (
 
 		{/* Flusso unico */}
 		<section>
-			<h4>Flusso unico</h4>
+			<Text type='label'>Flusso unico</Text>
 			<Text type='lead'>
 				Il cambiamento più significativo è stato la costruzione di un flusso
 				unico. Prima, le informazioni si muovevano attraverso strumenti e
@@ -62,7 +63,7 @@ const CaseSILS = () => (
 
 		{/* Rendicontazione */}
 		<section>
-			<h4>Rendicontazione</h4>
+			<Text type='label'>Rendicontazione</Text>
 			<Text type='lead'>
 				La rendicontazione, storicamente la parte più faticosa, oggi è una
 				conseguenza naturale del flusso. Le informazioni necessarie vengono
@@ -75,7 +76,7 @@ const CaseSILS = () => (
 
 		{/* Monitoraggio */}
 		<section>
-			<h4>Monitoraggio</h4>
+			<Text type='label'>Monitoraggio</Text>
 			<Text type='lead'>
 				Il livello regionale dispone ora di una visione completa e ordinata:
 				percorsi attivi, attività in corso, andamento dei finanziamenti, carico
@@ -86,7 +87,7 @@ const CaseSILS = () => (
 
 		{/* Software house */}
 		<section>
-			<h4>Per le software house</h4>
+			<Text type='label'>Per le software house</Text>
 			<Text type='lead'>
 				Per i team tecnici, il valore del SILS sta nella prevedibilità. Quando
 				ogni modulo segue la stessa logica, gli stati sono definiti e i ruoli
@@ -105,7 +106,7 @@ const CaseSILS = () => (
 
 		{/* Conclusione */}
 		<section>
-			<h4>Conclusione</h4>
+			<Text type='label'>Conclusione</Text>
 			<Text type='lead'>
 				SILS non è nato per essere il “nuovo software della Regione”, ma per
 				portare ordine in un sistema che ne aveva bisogno. Il risultato non è
@@ -129,7 +130,7 @@ const CaseAcademy = () => (
 
 		{/* Contesto */}
 		<section>
-			<h4>Contesto</h4>
+			<Text type='label'>Contesto</Text>
 			<Text type='lead'>
 				La gestione della formazione obbligatoria per i dipendenti pubblici
 				richiedeva una lunga sequenza di strumenti separati: fogli Excel, moduli
@@ -150,7 +151,7 @@ const CaseAcademy = () => (
 
 		{/* Architettura */}
 		<section>
-			<h4>Architettura</h4>
+			<Text type='label'>Architettura</Text>
 			<Text type='lead'>
 				Abbiamo definito l’intero ciclo di vita di un corso: creazione,
 				pubblicazione, assegnazione, svolgimento, validazione e rendicontazione.
@@ -162,7 +163,7 @@ const CaseAcademy = () => (
 
 		{/* Flusso end-to-end */}
 		<section>
-			<h4>Flusso end-to-end</h4>
+			<Text type='label'>Flusso end-to-end</Text>
 			<Text type='lead'>
 				Il cuore del progetto è un flusso continuo: dal budget alla conclusione
 				del corso. Non ci sono più segmenti scollegati o attività da ricucire.
@@ -178,7 +179,7 @@ const CaseAcademy = () => (
 
 		{/* Dashboard */}
 		<section>
-			<h4>Dashboard</h4>
+			<Text type='label'>Dashboard</Text>
 			<Text type='lead'>
 				La dashboard del dipendente restituisce una visione chiara e aggiornata
 				delle ore svolte, di quelle residue e dei corsi disponibili o
@@ -196,7 +197,7 @@ const CaseAcademy = () => (
 
 		{/* Automazioni */}
 		<section>
-			<h4>Automazioni e notifiche</h4>
+			<Text type='label'>Automazioni e notifiche</Text>
 			<Text type='lead'>
 				Le notifiche dell’Academy non sono un accessorio: proteggono il flusso
 				da interruzioni prevedibili. La piattaforma avvisa su corsi in scadenza,
@@ -208,7 +209,7 @@ const CaseAcademy = () => (
 
 		{/* Software house */}
 		<section>
-			<h4>Per le software house</h4>
+			<Text type='label'>Per le software house</Text>
 			<Text type='lead'>
 				L’Academy è progettata per evitare ambiguità. Stati chiari, ruoli
 				definiti, criteri di validazione evidenti e interfacce coerenti riducono
@@ -226,7 +227,7 @@ const CaseAcademy = () => (
 
 		{/* Conclusione */}
 		<section>
-			<h4>Conclusione</h4>
+			<Text type='label'>Conclusione</Text>
 			<Text type='lead'>
 				L’Academy non ha sostituito dei fogli: ha dato una struttura a un
 				processo che non ne aveva una. Il risultato è un gestionale stabile,
@@ -254,7 +255,7 @@ const CaseUnder = () => (
 		/>
 		{/* Contesto */}
 		<section>
-			<h4>Contesto</h4>
+			<Text type='label'>Contesto</Text>
 			<Text type='lead'>
 				UnderControl è un software cloud per la gestione di progetti, costi e
 				attività aziendali. La piattaforma desktop è ricca e articolata:
@@ -274,7 +275,7 @@ const CaseUnder = () => (
 
 		{/* Architettura dell’informazione */}
 		<section>
-			<h4>Architettura dell’informazione</h4>
+			<Text type='label'>Architettura dell’informazione</Text>
 			<Text type='lead'>
 				La prima fase ha definito una gerarchia chiara: quali sezioni servono
 				davvero su smartphone, quali dati devono essere immediati e quali flussi
@@ -297,7 +298,7 @@ const CaseUnder = () => (
 		</div>
 		{/* Sistema colori */}
 		<section>
-			<h4>Sistema colori</h4>
+			<Text type='label'>Sistema colori</Text>
 			<Text type='lead'>
 				La palette è stata ripensata per supportare leggibilità e
 				riconoscibilità: il blu mantiene continuità con la piattaforma, il
@@ -309,7 +310,7 @@ const CaseUnder = () => (
 
 		{/* Tipografia e componenti */}
 		<section>
-			<h4>Tipografia e componenti</h4>
+			<Text type='label'>Tipografia e componenti</Text>
 			<Text type='lead'>
 				Il nuovo font migliora la leggibilità e rafforza la gerarchia.
 				Componenti, spaziature e stati interattivi sono stati allineati per
@@ -331,7 +332,7 @@ const CaseUnder = () => (
 		</div>
 		{/* Diario di Progetto */}
 		<section>
-			<h4>Diario di Progetto</h4>
+			<Text type='label'>Diario di Progetto</Text>
 			<Text type='lead'>
 				Il Diario è stato riprogettato come strumento operativo: inserimento
 				dati semplice e guidato, visualizzazione ordinata e leggibile,
@@ -343,7 +344,7 @@ const CaseUnder = () => (
 
 		{/* Risultati */}
 		<section>
-			<h4>Risultati</h4>
+			<Text type='label'>Risultati</Text>
 			<Text type='lead'>
 				Il redesign dell’app mobile ha prodotto un’interfaccia più leggibile,
 				coerente e professionale. La navigazione è rapida anche in contesti
@@ -361,14 +362,29 @@ const CaseUnder = () => (
 );
 
 function Case() {
+	const { caseId } = useParams();
+	const navigate = useNavigate();
 	const [activeCase, setActiveCase] = useState(null);
+
+	// Initialize activeCase from URL parameter
+	useEffect(() => {
+		if (caseId) {
+			const normalizedCaseId = caseId.toUpperCase();
+			if (['SILS', 'ACADEMY', 'UNDER'].includes(normalizedCaseId)) {
+				setActiveCase(normalizedCaseId);
+			}
+		}
+	}, [caseId]);
+
 	const toggleCase = (caseId) => {
 		if (activeCase === caseId) {
-			// close only: let useEffect handle the scroll
+			// close: navigate back to /case
 			setActiveCase(null);
+			navigate('/case');
 		} else {
-			// open
+			// open: navigate to /case/:caseId
 			setActiveCase(caseId);
+			navigate(`/case/${caseId.toLowerCase()}`);
 		}
 	};
 
@@ -383,7 +399,7 @@ function Case() {
 	return (
 		<main>
 			<article className='pt-20 pb-40'>
-				<h1>Casi Studio</h1>
+				<Text type='title'>Casi Studio</Text>
 
 				<div
 					role='button'
@@ -400,7 +416,7 @@ function Case() {
 					}`}>
 					<Text type='label'>Sistema Informativo per la Regione Veneto</Text>
 					<Text
-						type='lead'
+						type='subtitle'
 						className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
 						SILS — Sistema Informativo Lavoro e Sociale
 					</Text>
@@ -428,7 +444,7 @@ function Case() {
 						HRMS per la formazione dei dipendenti di Veneto Lavoro
 					</Text>
 					<Text
-						type='lead'
+						type='subtitle'
 						className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
 						Academy Veneto Lavoro Gestionale
 					</Text>
@@ -453,7 +469,7 @@ function Case() {
 					}`}>
 					<Text type='label'>interfaccia mobile</Text>
 					<Text
-						type='lead'
+						type='subtitle'
 						className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
 						UnderControl
 					</Text>

@@ -4,6 +4,7 @@
 
 html {
 	scroll-behavior: smooth;
+	text-wrap-style: pretty;
 }
 
 html,
@@ -31,44 +32,13 @@ body {
 		@apply relative min-h-screen px-4 bg-white;
 	}
 	article {
-		@apply max-w-screen-lg mx-auto;
+		@apply max-w-screen-lg pt-20 pb-40 mx-auto;
 	}
 	button {
 		@apply px-5 py-3 my-8 tracking-wide text-white uppercase transition-all lg:text-lg md:text-base sm:text-sm rounded-2xl bg-ruby-400 hover:bg-ruby-400/10 hover:text-ruby-400;
 	}
 
-	h1 {
-		@apply mb-12 font-bold tracking-tight text-black lg:text-5xl md:text-4xl sm:text-2xl;
-	}
-	h2 {
-		@apply font-normal lg:text-4xl md:text-3xl sm:text-lg text-gray-600 !leading-normal;
-		text-wrap: pretty;
-	}
-	h3 {
-		@apply text-gray-600 md:text-2xl sm:text-xl;
-	}
-	h4 {
-		@apply pb-5 font-medium tracking-widest text-gray-700 uppercase lg:text-lg sm:text-base;
-	}
-
-	h5 {
-		@apply text-xl font-light text-gray-600;
-		text-wrap: pretty;
-	}
-
 	p {
 		@apply md:mb-4 sm:mb-1 sm:text-sm md:text-base;
-	}
-
-	ul,
-	li {
-		@apply sm:text-sm md:text-base;
-	}
-	strong {
-		@apply font-medium;
-	}
-	.text-h2 {
-		@apply font-normal leading-snug text-gray-600 lg:text-4xl md:text-3xl sm:text-lg;
-		text-wrap: pretty;
 	}
 }

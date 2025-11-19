@@ -3,20 +3,21 @@ import Text from '../components/text.jsx';
 export default function Contatti() {
 	return (
 		<main>
-			<article className='flex flex-col pt-20 pb-40 sm:gap-32 md:gap-52'>
-				<h1>Contatti</h1>
-				<section className='flex flex-col gap-32 pb-40 mt-20 scroll-mt-20'>
-					<h1 className='font-light leading-loose text-ruby-400'>
+			<article>
+				<Text type='title'>Contatti</Text>
+				<section className='flex flex-col gap-10 pb-40 mt-52 scroll-mt-20'>
+					<Text type='title' className='font-light leading-loose text-ruby-400'>
 						Pronti a mettere ordine?
-						<br />
-						<span className='font-bold tracking-tighter text-ruby-400'>
-							Parliamone.
-						</span>
-					</h1>
+					</Text>
+					<Text
+						type='title'
+						className='font-bold tracking-tighter text-ruby-400'>
+						Parliamone.
+					</Text>
 
 					<div className='flex flex-col gap-8 md:flex-row md:items-stretch md:justify-between'>
 						<div className='flex flex-col gap-4 md:w-1/2 md:pr-8'>
-							<h3>Parliamo del progetto</h3>
+							<Text type='label'>Parliamo del progetto</Text>
 							<Text type='lead' className=''>
 								Raccontateci il vostro prodotto.
 								<br />
@@ -34,7 +35,7 @@ export default function Contatti() {
 						</div>
 
 						<div className='flex flex-col gap-4 md:w-1/2 md:pl-8'>
-							<h3>Servizi rapidi</h3>
+							<Text type='label'>Servizi rapidi</Text>
 							<Text type='lead'>
 								Discovery sprint, test e prototipi per validare idee senza
 								impegnare lo sviluppo.

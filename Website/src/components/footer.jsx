@@ -1,3 +1,5 @@
+import Text from './text';
+
 export default function Footer() {
 	return (
 		<footer>
@@ -6,26 +8,30 @@ export default function Footer() {
 					<div className='grid gap-16 md:grid-cols-3'>
 						<div className='space-y-6 md:col-span-1'>
 							<div>
-								<h2 className='text-3xl font-extrabold tracking-tight text-ruby-400'>
+								<Text
+									type='custom'
+									className='text-3xl font-extrabold tracking-tight text-ruby-400'>
 									Discipline<span className='text-white'>Design</span>
-								</h2>
-								<h3>Software a misura d'uomo</h3>
+								</Text>
+								<Text type='subsection'>Software a misura d'uomo</Text>
 							</div>
-							<h5 className='max-w-md leading-relaxed text-neutral-400'>
+							<Text
+								type='small'
+								className='max-w-md leading-relaxed text-neutral-400'>
 								Trasformiamo idee, requisiti e vincoli in sistemi chiari:
 								architetture, flussi, prototipi e interfacce che i team tecnici
 								possono implementare senza incertezze.
-							</h5>
+							</Text>
 						</div>
 
 						<div className='space-y-6'>
-							<h3 className='text-xs font-semibold tracking-wide uppercase text-neutral-100'>
+							<Text type='label' className='text-white/80'>
 								Parliamone
-							</h3>
-							<h5 className='leading-relaxed text-neutral-400'>
+							</Text>
+							<Text type='small' className='leading-relaxed text-neutral-400'>
 								Raccontaci la tua sfida: iniziamo con un confronto gratuito e
 								senza impegno.
-							</h5>
+							</Text>
 
 							<button type='button' className='mt-8 lowercase btn btn-primary'>
 								<a href='mailto:info@discipline.design?subject=Nuovo progetto'>
@@ -34,12 +40,12 @@ export default function Footer() {
 							</button>
 						</div>
 						<div className='space-y-6 text-sm'>
-							<h3 className='text-xs font-semibold tracking-wide uppercase text-neutral-100'>
+							<Text type='label' className='text-white/80'>
 								Dove
-							</h3>
-							<h5 className='leading-relaxed text-neutral-400'>
+							</Text>
+							<Text type='small' className='leading-relaxed text-neutral-400'>
 								La nostra base è Verona; online ovunque.
-							</h5>
+							</Text>
 						</div>
 					</div>
 

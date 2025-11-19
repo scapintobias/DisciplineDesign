@@ -1,3 +1,5 @@
+import Text from '../components/text';
+
 export function Card({
 	title,
 	subtitle,
@@ -14,8 +16,10 @@ export function Card({
 					{icon}
 				</div>
 				<div>
-					<h4>{title}</h4>
-					<h5 className='font-light'>{subtitle}</h5>
+					<Text type='label'>{title}</Text>
+					<Text type='subsection' className='font-light'>
+						{subtitle}
+					</Text>
 				</div>
 			</div>
 		</article>
@@ -25,7 +29,7 @@ export function Card({
 export default function Servizi() {
 	return (
 		<main>
-			<article className='flex flex-col pt-20 pb-40 sm:gap-32 md:gap-52'>
+			<article className='flex flex-col sm:gap-32 md:gap-52'>
 				<h1>Servizi</h1>
 				<div className='grid gap-6 mx-auto cards-grid sm:gap-8 md:grid-cols-2 lg:grid-cols-3'>
 					<Card

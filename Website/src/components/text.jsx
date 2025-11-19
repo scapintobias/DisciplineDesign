@@ -4,23 +4,34 @@ export default function Text({ type = 'body', className = '', children }) {
 	switch (type) {
 		case 'title':
 			base =
-				'font-bold tracking-tight text-black lg:text-5xl md:text-4xl sm:text-2xl';
+				'mb-12 font-bold tracking-tight text-black lg:text-5xl md:text-4xl sm:text-2xl';
 			break;
 		case 'subtitle':
-			base =
-				'font-semibold tracking-tight text-gray-900 lg:text-3xl md:text-2xl';
+			base = 'font-semibold tracking-tight text-black lg:text-4xl md:text-2xl';
 			break;
 		case 'lead':
-			base = 'text-h2';
+			base =
+				'font-normal leading-snug text-gray-600 lg:text-4xl md:text-3xl sm:text-lg';
 			break;
 
 		case 'label':
-			base = 'uppercase tracking-wider text-sm text-gray-500';
+			base =
+				'pb-5 font-medium tracking-widest text-slate-600 uppercase lg:text-lg sm:text-base';
 			break;
 
-		case 'body':
+		case 'subsection':
+			base = 'text-gray-600  leading-snug md:text-2xl sm:text-xl';
+			break;
+		case 'small':
+			base = 'text-lg text-gray-500 font-light tracking-normal leading-relaxed';
+			break;
+		case 'custom':
+			base = '';
+			break;
+
 		default:
-			base = 'text-base text-gray-700 leading-relaxed';
+			base =
+				'font-normal text-gray-600 leading-snug lg:text-4xl md:text-3xl sm:text-lg';
 			break;
 	}
 
