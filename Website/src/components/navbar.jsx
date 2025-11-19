@@ -9,7 +9,8 @@ function Nav() {
 						<NavLink className='font-extra-black text-ruby-400' to='/'>
 							DD
 						</NavLink>
-						<nav className='flex items-end h-full gap-8 text-lg font-light'>
+						<nav className='flex items-end h-full gap-8 text-base font-light md:text-lg'>
+							<NavLink to='/case'>Casi studio</NavLink>
 							<NavLink to='/servizi'>Servizi</NavLink>
 							<NavLink to='/contatti'>Contatti</NavLink>
 						</nav>

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
+import Text from './text';
 // robust intersection hook
 const useElementInView = (ref, options = { threshold: 0.15 }) => {
 	const [inView, setInView] = useState(false);
@@ -64,14 +64,17 @@ function Ordine() {
 
 	return (
 		<section>
-			<h2 className='font-bold text-black'>Decisioni 80% più veloci</h2>
-			<section className='flex md:items-center md:justify-center sm:gap-14 md:gap-24 md:my-20 sm:flex-col md:flex-row'>
+			<Text type='lead' className='font-bold text-black'>
+				Decisioni più rapide e meno blocchi operativi
+			</Text>
+
+			<section className='flex mt-14 sm:items-center md:justify-around gap-14 sm:flex-col md:flex-row'>
 				<div>
-					<div className='grid grid-cols-7 gap-3 my-6 '>
+					<div className='grid grid-cols-7 gap-2 my-6'>
 						{nonOttimizzato.map((i) => (
 							<motion.div
 								key={i}
-								className='w-12 h-12 rounded-full bg-[#2D0C00]'
+								className='w-10 h-10 rounded-full bg-[#2D0C00]'
 								initial={{ scale: 0 }}
 								whileInView={{ scale: 1 }}
 								viewport={{ once: true, amount: 0.3 }}
@@ -79,14 +82,14 @@ function Ordine() {
 							/>
 						))}
 					</div>
-					<h4>Non ottimizzato</h4>
+					<Text type='label'>Non ottimizzato</Text>
 				</div>
 				<div>
-					<div className='grid grid-cols-7 gap-3 my-6'>
+					<div className='grid grid-cols-7 my-6 gap-x-2 gap-y-2'>
 						{ottimizzato.map((i) => (
 							<motion.div
 								key={i}
-								className={`w-12 h-12 rounded-full ${
+								className={`w-10 h-10 rounded-full ${
 									i < 6 ? 'bg-[#FF4500]' : 'border-2 border-[#D9D9D9]'
 								}`}
 								initial={{ scale: 0 }}
@@ -96,7 +99,7 @@ function Ordine() {
 							/>
 						))}
 					</div>
-					<h4>Ottimizzato</h4>
+					<Text type='label'>Ottimizzato</Text>
 				</div>
 			</section>
 		</section>
@@ -111,9 +114,9 @@ function Problema() {
 
 	return (
 		<section className='w-full'>
-			<h2 className='font-bold text-black'>
-				I costi di rework calano dal 70% al 20%
-			</h2>
+			<Text type='lead' className='font-bold text-black'>
+				Meno rework, più tempo per sviluppare
+			</Text>
 
 			{/* Non ottimizzato */}
 			<svg ref={svgRefNon} viewBox='0 0 1200 160' className='w-full h-auto'>
@@ -128,20 +131,10 @@ function Problema() {
 					animate={nonInView ? { width: 840 } : { width: 0 }}
 					transition={{ duration: 1 }}
 				/>
-				<motion.text
-					x='770'
-					y='125'
-					textAnchor='middle'
-					fill='#D9D9D9'
-					fontWeight='900'
-					style={{ fontSize: 'clamp(65px, 5vw, 72px)' }}
-					initial={{ opacity: 0 }}
-					animate={nonInView ? { opacity: 1 } : { opacity: 0 }}
-					transition={{ delay: 0.5 }}>
-					70
-				</motion.text>
 			</svg>
-			<h4 className='sm:pl-3 md:pl-12'>Non ottimizzato</h4>
+			<Text type='label' className='sm:pl-3 md:pl-12'>
+				Non ottimizzato
+			</Text>
 
 			{/* Ottimizzato */}
 			<svg ref={svgRefOpt} viewBox='0 0 1200 160' className='w-full h-auto'>
@@ -156,20 +149,10 @@ function Problema() {
 					animate={optInView ? { width: 240 } : { width: 0 }}
 					transition={{ duration: 1, delay: 0.3 }}
 				/>
-				<motion.text
-					x='170'
-					y='125'
-					textAnchor='middle'
-					fill='#D9D9D9'
-					fontWeight='900'
-					style={{ fontSize: 'clamp(65px, 5vw, 72px)' }}
-					initial={{ opacity: 0 }}
-					animate={optInView ? { opacity: 1 } : { opacity: 0 }}
-					transition={{ delay: 0.8 }}>
-					20
-				</motion.text>
 			</svg>
-			<h4 className='sm:pl-3 md:pl-12'>Ottimizzato</h4>
+			<Text type='label' className='sm:pl-3 md:pl-12'>
+				Ottimizzato
+			</Text>
 		</section>
 	);
 }
@@ -268,9 +251,9 @@ function AMonte() {
 
 	return (
 		<section className='w-full my-20'>
-			<h2 className='font-bold text-black'>
-				Ambiguità iniziali ridotte del 90%
-			</h2>
+			<Text type='lead' className='font-bold text-black'>
+				Molte meno ambiguità a partire dai requisiti iniziali
+			</Text>
 
 			<section className='justify-between t:flex gap-x-20'>
 				{/* --- Frame 3 (random a sinistra) --- */}
@@ -299,7 +282,9 @@ function AMonte() {
 							/>
 						))}
 					</svg>
-					<h4 className='md:mt-4 sm:self-start'>Non ottimizzato</h4>
+					<Text type='label' className='md:mt-4 sm:self-start'>
+						Non ottimizzato
+					</Text>
 				</div>
 				<div className='flex flex-col items-center'>
 					<svg
@@ -344,7 +329,9 @@ function AMonte() {
 							);
 						})}
 					</svg>
-					<h4 className='md:mt-4 sm:self-start'>Ottimizzato</h4>
+					<Text type='label' className='md:mt-4 sm:self-start'>
+						Ottimizzato
+					</Text>
 				</div>
 			</section>
 		</section>
