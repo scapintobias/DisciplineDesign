@@ -50,11 +50,11 @@ export default function Footer() {
 					</div>
 
 					<div className='flex flex-col gap-6 pt-8 mt-20 border-t border-neutral-700/40 md:flex-row md:items-center md:justify-between'>
-						<p className='text-s text-neutral-500'>
+						<Text type='custom' className='text-sm text-neutral-500'>
 							© {new Date().getFullYear()} DisciplineDesign è un progetto di
 							Sofia Righetti—P.IVA 04364000234—e Tobia Scapin—P.IVA
 							04273780272—Tutti i diritti riservati.
-						</p>
+						</Text>
 					</div>
 				</div>
 			</div>

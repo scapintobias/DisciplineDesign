@@ -397,90 +397,99 @@ function Case() {
 	}, [activeCase]);
 
 	return (
-		<main>
-			<article className='pt-20 pb-40'>
-				<Text type='title'>Casi Studio</Text>
+		<>
+			<SEO
+				title='Casi Studio — DisciplineDesign'
+				description='Casi studio su sistemi complessi: SILS, Academy e UnderControl. Dalla frammentazione a flussi unici e governabili.'
+				ogUrl='https://discipline.design/cases'
+				canonical='https://discipline.design/cases'
+			/>
 
-				<div
-					role='button'
-					tabIndex={0}
-					onClick={() => toggleCase('SILS')}
-					onKeyDown={(event) => {
-						if (event.key === 'Enter' || event.key === ' ') {
-							event.preventDefault();
-							toggleCase('SILS');
-						}
-					}}
-					className={`border-t border-b cursor-pointer mt-44 ${
-						activeCase !== 'SILS' ? 'group' : ''
-					}`}>
-					<Text type='label'>Sistema Informativo per la Regione Veneto</Text>
-					<Text
-						type='subtitle'
-						className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
-						SILS — Sistema Informativo Lavoro e Sociale
-					</Text>
+			<main>
+				<article className='pt-20 pb-40'>
+					<Text type='title'>Casi Studio</Text>
 
-					{activeCase === 'SILS' && (
-						<div className='my-24'>
-							<CaseSILS />
-						</div>
-					)}
-				</div>
-				<div
-					role='button'
-					tabIndex={0}
-					onClick={() => toggleCase('ACADEMY')}
-					onKeyDown={(event) => {
-						if (event.key === 'Enter' || event.key === ' ') {
-							event.preventDefault();
-							toggleCase('ACADEMY');
-						}
-					}}
-					className={`transition-colors border-b cursor-pointer ${
-						activeCase !== 'ACADEMY' ? 'group' : ''
-					}`}>
-					<Text type='label'>
-						HRMS per la formazione dei dipendenti di Veneto Lavoro
-					</Text>
-					<Text
-						type='subtitle'
-						className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
-						Academy Veneto Lavoro Gestionale
-					</Text>
-					{activeCase === 'ACADEMY' && (
-						<div className='my-24'>
-							<CaseAcademy />
-						</div>
-					)}
-				</div>
-				<div
-					role='button'
-					tabIndex={0}
-					onClick={() => toggleCase('UNDER')}
-					onKeyDown={(event) => {
-						if (event.key === 'Enter' || event.key === ' ') {
-							event.preventDefault();
-							toggleCase('UNDER');
-						}
-					}}
-					className={`transition-colors border-b cursor-pointer ${
-						activeCase !== 'UNDER' ? 'group' : ''
-					}`}>
-					<Text type='label'>interfaccia mobile</Text>
-					<Text
-						type='subtitle'
-						className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
-						UnderControl
-					</Text>
-					{activeCase === 'UNDER' && (
-						<div className='my-24'>
-							<CaseUnder />
-						</div>
-					)}
-				</div>
-			</article>
-		</main>
+					<div
+						role='button'
+						tabIndex={0}
+						onClick={() => toggleCase('SILS')}
+						onKeyDown={(event) => {
+							if (event.key === 'Enter' || event.key === ' ') {
+								event.preventDefault();
+								toggleCase('SILS');
+							}
+						}}
+						className={`border-t border-b cursor-pointer mt-44 ${
+							activeCase !== 'SILS' ? 'group' : ''
+						}`}>
+						<Text type='label'>Sistema Informativo per la Regione Veneto</Text>
+						<Text
+							type='subtitle'
+							className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
+							SILS — Sistema Informativo Lavoro e Sociale
+						</Text>
+
+						{activeCase === 'SILS' && (
+							<div className='my-24'>
+								<CaseSILS />
+							</div>
+						)}
+					</div>
+					<div
+						role='button'
+						tabIndex={0}
+						onClick={() => toggleCase('ACADEMY')}
+						onKeyDown={(event) => {
+							if (event.key === 'Enter' || event.key === ' ') {
+								event.preventDefault();
+								toggleCase('ACADEMY');
+							}
+						}}
+						className={`transition-colors border-b cursor-pointer ${
+							activeCase !== 'ACADEMY' ? 'group' : ''
+						}`}>
+						<Text type='label'>
+							HRMS per la formazione dei dipendenti di Veneto Lavoro
+						</Text>
+						<Text
+							type='subtitle'
+							className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
+							Academy Veneto Lavoro Gestionale
+						</Text>
+						{activeCase === 'ACADEMY' && (
+							<div className='my-24'>
+								<CaseAcademy />
+							</div>
+						)}
+					</div>
+					<div
+						role='button'
+						tabIndex={0}
+						onClick={() => toggleCase('UNDER')}
+						onKeyDown={(event) => {
+							if (event.key === 'Enter' || event.key === ' ') {
+								event.preventDefault();
+								toggleCase('UNDER');
+							}
+						}}
+						className={`transition-colors border-b cursor-pointer ${
+							activeCase !== 'UNDER' ? 'group' : ''
+						}`}>
+						<Text type='label'>interfaccia mobile</Text>
+						<Text
+							type='subtitle'
+							className='mt-16 font-bold text-black transition-colors group-hover:text-ruby-400'>
+							UnderControl
+						</Text>
+						{activeCase === 'UNDER' && (
+							<div className='my-24'>
+								<CaseUnder />
+							</div>
+						)}
+					</div>
+				</article>
+			</main>
+		</>
 	);
 }
 

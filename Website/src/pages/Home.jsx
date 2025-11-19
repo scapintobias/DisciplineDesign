@@ -43,7 +43,13 @@ export default function Home() {
 
 	return (
 		<>
-			<SEO />
+			<SEO
+				title='DisciplineDesign — Architetture e sistemi per software complessi'
+				description='Progettiamo architetture, flussi e interfacce per software complessi, lavorando a fianco delle software house per ridurre ambiguità e accelerare lo sviluppo.'
+				ogUrl='https://discipline.design'
+				canonical='https://discipline.design'
+				ogImage='/og-image.jpg'
+			/>
 
 			<header>
 				<div className='fixed inset-0 z-0'>
