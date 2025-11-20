@@ -142,9 +142,11 @@ export default function Home() {
 						<Text type='label'>Chi siamo</Text>
 
 						<Text type='title'>
-							Siamo un collettivo di designer orientati a far funzionare i
-							sistemi, non solo le schermate, con l’obiettivo di creare prodotti
-							che funzionano oggi e continuano a funzionare domani.
+							Siamo un collettivo di designer formati al Politecnico di Milano
+							in progettazione di sistemi complessi, orientati a far funzionare
+							i prodotti nel loro insieme, non solo le schermate, con
+							l’obiettivo di creare soluzioni che funzionano oggi e continuano a
+							funzionare domani.
 						</Text>
 
 						<Text type='lead' className='mt-6'>

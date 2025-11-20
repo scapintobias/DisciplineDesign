@@ -25,7 +25,7 @@ export default function Footer() {
 						</div>
 
 						<div className='space-y-6'>
-							<Text type='label' className='text-white/80'>
+							<Text type='capstitle' className='text-white/80'>
 								Parliamone
 							</Text>
 							<Text type='small' className='leading-relaxed text-neutral-400'>
@@ -40,7 +40,7 @@ export default function Footer() {
 							</button>
 						</div>
 						<div className='space-y-6 text-sm'>
-							<Text type='label' className='text-white/80'>
+							<Text type='capstitle' className='text-white/80'>
 								Dove
 							</Text>
 							<Text type='small' className='leading-relaxed text-neutral-400'>

@@ -9,7 +9,10 @@ import {
 import './index.css';
 import Nav from './components/navbar.jsx';
 import Home from './pages/Home.jsx';
-import Case from './pages/Case.jsx';
+import Casi from './pages/Casi.jsx';
+import CaseSILS from './components/casi/CaseSILS.jsx';
+import CaseAcademy from './components/casi/CaseAcademy.jsx';
+import CaseUnder from './components/casi/CaseUnder.jsx';
 import Servizi from './pages/Servizi.jsx';
 import Contatti from './pages/Contatti.jsx';
 import Footer from './components/footer.jsx';
@@ -61,12 +64,20 @@ const router = createBrowserRouter([
 				element: <Contatti />,
 			},
 			{
-				path: 'case',
-				element: <Case />,
+				path: 'casi',
+				element: <Casi />,
 			},
 			{
-				path: 'case/:caseId',
-				element: <Case />,
+				path: 'casi/sils',
+				element: <CaseSILS />,
+			},
+			{
+				path: 'casi/academy',
+				element: <CaseAcademy />,
+			},
+			{
+				path: 'casi/under',
+				element: <CaseUnder />,
 			},
 		],
 	},

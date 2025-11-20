@@ -16,9 +16,12 @@ export default function Text({ type = 'body', className = '', children }) {
 
 		case 'label':
 			base =
+				'py-5 font-medium tracking-widest text-slate-600 uppercase lg:text-lg sm:text-base';
+			break;
+		case 'capstitle':
+			base =
 				'pb-5 font-medium tracking-widest text-slate-600 uppercase lg:text-lg sm:text-base';
 			break;
-
 		case 'subsection':
 			base = 'text-gray-600  leading-snug md:text-2xl sm:text-xl';
 			break;
