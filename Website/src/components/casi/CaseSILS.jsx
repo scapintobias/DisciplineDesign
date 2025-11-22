@@ -24,8 +24,8 @@ function CaseSILS() {
 							</Text>
 
 							<Text type='lead' className='mt-16'>
-								Progettare un sistema unico dove prima c'erano dodici modi
-								diversi di fare la stessa cosa.
+								Progettare un sistema unico dove prima c'erano nove modi diversi
+								di fare la stessa cosa.
 							</Text>
 						</section>
 

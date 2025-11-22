@@ -13,13 +13,13 @@ function Casi() {
 			/>
 
 			<main>
-				<article className='pt-20 pb-40'>
+				<article>
 					<Text type='title'>Casi Studio</Text>
 					<Text type='lead' className='mt-8'>
-						Progettiamo sistemi digitali complessi. Il nostro lavoro si è
-						consolidato attraverso collaborazioni continuative con enti pubblici
-						regionali, tra cui Veneto Lavoro. Questi case study mostrano come
-						interveniamo quando i flussi crescono più in fretta delle
+						Progettiamo sistemi digitali complessi per pubblica amministrazione
+						e settore privato. Tra le nostre collaborazioni rientrano anche
+						Regione Veneto e Veneto Lavoro. Questi case study mostrano come
+						affrontiamo scenari in cui i flussi evolvono più rapidamente delle
 						interfacce.
 					</Text>
 

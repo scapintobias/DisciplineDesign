@@ -32,7 +32,7 @@ body {
 		@apply relative min-h-screen px-4 bg-white;
 	}
 	article {
-		@apply max-w-screen-lg pt-20 pb-40 mx-auto;
+		@apply max-w-screen-lg py-40 mx-auto;
 	}
 	button {
 		@apply px-5 py-3 my-8 tracking-wide text-white uppercase transition-all lg:text-lg md:text-base sm:text-sm rounded-2xl bg-ruby-400 hover:bg-ruby-400/10 hover:text-ruby-400;

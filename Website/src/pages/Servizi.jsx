@@ -10,7 +10,7 @@ export function Card({
 	className = '',
 }) {
 	return (
-		<article
+		<section
 			className={`${border} pb-8 border-0 border-b ${borderColorClass} ${className}`}>
 			<div className='flex flex-col gap-4'>
 				<div className='flex items-center justify-center flex-none w-12 h-12 rounded-lg bg-ruby-400/10'>
@@ -23,7 +23,7 @@ export function Card({
 					</Text>
 				</div>
 			</div>
-		</article>
+		</section>
 	);
 }
 
@@ -37,7 +37,7 @@ export default function Servizi() {
 				canonical='https://discipline.design/servizi'
 			/>
 			<main>
-				<article className='flex flex-col sm:gap-32 md:gap-52'>
+				<article className='flex flex-col gap-20'>
 					<Text type='title'>Servizi</Text>
 					<div className='grid gap-6 mx-auto cards-grid sm:gap-8 md:grid-cols-2 lg:grid-cols-3'>
 						<Card

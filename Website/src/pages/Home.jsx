@@ -51,19 +51,10 @@ export default function Home() {
 				ogImage='/og-image.jpg'
 			/>
 
-			<header>
-				<div className='fixed inset-0 z-0'>
-					<img
-						src='/home.avif'
-						alt='DisciplineDesign - UX/UI progettazione professionale'
-						className='object-cover w-full h-full'
-						ref={patternRef}
-						aria-hidden='true'
-						style={{ transition: 'opacity 180ms linear', opacity: 1 }}
-					/>
-				</div>
-
-				<div className='relative h-screen'>
+			<header
+				className='min-h-[100dvh] inset-0 z-0 bg-[url(/home.avif)] bg-cover bg-center '
+				style={{ transition: 'opacity 180ms linear', opacity: 1 }}>
+				<div className='relative min-h-[120dvh]'>
 					<div className='sticky z-10 max-w-screen-xl mx-auto top-1/2 -translate-y-1/4 sm:px-4'>
 						<img
 							src='logo.svg'
@@ -142,7 +133,7 @@ export default function Home() {
 						<Text type='label'>Chi siamo</Text>
 
 						<Text type='title'>
-							Siamo un collettivo di designer formati al Politecnico di Milano
+							Siamo un collettivo di designer, formati al Politecnico di Milano
 							in progettazione di sistemi complessi, orientati a far funzionare
 							i prodotti nel loro insieme, non solo le schermate, con
 							l’obiettivo di creare soluzioni che funzionano oggi e continuano a
@@ -156,7 +147,7 @@ export default function Home() {
 
 						<Text type='lead' className='mt-6'>
 							Progettiamo architetture e percorsi che permettono ai team tecnici
-							di lavorare con sicurezza, senza marggi di interpretazione.
+							di lavorare con sicurezza, senza margini di interpretazione.
 						</Text>
 
 						<Text type='lead' className='mt-6'>
