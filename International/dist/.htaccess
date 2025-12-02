@@ -1,0 +1,14 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Serve existing files and directories normally
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# SPA fallback – let React handle routing (including 404)
+RewriteRule ^ index.html [L]
+
+# Ensure a 404 still routes through the app
+ErrorDocument 404 /index.html
